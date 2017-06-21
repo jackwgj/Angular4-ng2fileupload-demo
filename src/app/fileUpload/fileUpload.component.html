@@ -1,0 +1,5 @@
+<input type="file" ng2FileSelect  [uploader]="uploader" (change)="selectedFileOnChanged($event)"  placeholder="请选择要上传的文件">
+<div style="padding-left:125px; padding-top: 10px;" [hidden]="defType !== 1">
+  <img [src]="defImg" style="width: 100px;height: 80px;" />
+</div>
+<input type="hidden" id="upload-file-id-{{name}}" name="{{name}}" (click)="changeModel()"  >
